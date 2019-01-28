@@ -1,0 +1,7 @@
+D:\Мишель\vs c#\progr_var_5\progr_var_5\obj\Debug\progr_var_5.csprojResolveAssemblyReference.cache
+D:\Мишель\vs c#\progr_var_5\progr_var_5\obj\Debug\progr_var_5.csproj.CoreCompileInputs.cache
+D:\Мишель\vs c#\progr_var_5\progr_var_5\bin\Debug\progr_var_5.exe.config
+D:\Мишель\vs c#\progr_var_5\progr_var_5\bin\Debug\progr_var_5.exe
+D:\Мишель\vs c#\progr_var_5\progr_var_5\bin\Debug\progr_var_5.pdb
+D:\Мишель\vs c#\progr_var_5\progr_var_5\obj\Debug\progr_var_5.exe
+D:\Мишель\vs c#\progr_var_5\progr_var_5\obj\Debug\progr_var_5.pdb
