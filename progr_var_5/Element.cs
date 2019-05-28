@@ -8,13 +8,13 @@ namespace progr_var_5
 {
     class Element
     {
-        public double Value { get; set; }
+        public double Value { get; set; }   // значение типа double которое мы храним в узле
 
-        public Element Next { get; set; }
+        public Element Next { get; set; }   // ссылка на следующий элемент
 
-        public Element Prev { get; set; }
+        public Element Prev { get; set; }   // ссылка на прошлый элемент
 
-        public Element(double val)
+        public Element(double val)          // констроктор класса, создающий элемент с значением val
         {
             Value = val;
             Next = null;

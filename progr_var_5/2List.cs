@@ -8,39 +8,44 @@ namespace progr_var_5
 {
     class _2List
     {
-        Element head;
-        int count;
+        Element head;                                       //начало списка(первый элемент)
+        int count;                                          // счетчик элементов в списке
 
-        public int Count
+        public int Count                                    // публичный доступ к чтению полей класса
         {
             get { return count; }
-        }
-
+        }                                  
         public Element Head
         {
             get { return head; }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="val"></param>
-        public _2List(double val)
+        public _2List(double val)                           // конструктор класса с входным значением double
         {
             count = 1;
             head = new Element(val);            
         }
-
-        public void Add(double val)
+        public _2List(Element val)                          // конструктор класса с входным значением Element
         {
-            Element New = new Element(val);
-            Element tmpFind = FindLast();
-            tmpFind.Next = New;
-            New.Prev = tmpFind;
-            count++;
+            count = 1;
+            head = val;
         }
 
-        private Element FindLast()
+        public void Add(double val)                         //добавление нового элемента в список(добавление в конце списка)
+        {
+            if (head == null)
+                head = new Element(val);
+            else
+            {
+                Element New = new Element(val);
+                Element tmpFind = FindLast();
+                tmpFind.Next = New;
+                New.Prev = tmpFind;
+                count++;
+            }
+        }
+
+        private Element FindLast()                          //метод поиска последнего элемента в списке
         {
             Element tmp = head;
             while (tmp.Next != null)
@@ -55,7 +60,7 @@ namespace progr_var_5
         /// <returns></returns>
         public Element GetElement(int val)
         {
-            if (head != null)
+            if (head != null || val < count)
             {
                 Element tmp = head;
                 for (int i = 0; i < val; i++)                
@@ -73,14 +78,10 @@ namespace progr_var_5
         /// <returns></returns>
         public Element Find(double val)
         {
-            if (head != null)
-            {
-                Element tmp = head;
-                while (tmp != null && tmp.Value != val)
-                    tmp = tmp.Next;
-                return tmp;
-            }
-            else return null;
+            Element tmp = head;
+            while (tmp != null && tmp.Value != val)
+                tmp = tmp.Next;
+            return tmp;
         }
 
         /// <summary>
@@ -201,23 +202,20 @@ namespace progr_var_5
         {
             if (l1 == null && l2 == null)
                 return null;
+            if (l1 == null || l2 == null)
+                if (l1 == null) return l2;
+                else return l1;
             else
             {
-                if (l1 == null || l2 == null)
-                    if (l1 == null) return l2;
-                    else return l1;
-                else
+                _2List tmp = l1;
+                Element tmpE = l2.head;
+                while (tmpE != null)
                 {
-                    _2List tmp = l1;
-                    Element tmpE = l2.head;
-                    while (tmpE != null)
-                    {
-                        tmp.Add(tmpE.Value);
-                        tmpE = tmpE.Next;
-                    }
-                    return tmp;
+                    tmp.Add(tmpE.Value);
+                    tmpE = tmpE.Next;
                 }
-            }
+                return tmp;
+            }            
         }
 
     }

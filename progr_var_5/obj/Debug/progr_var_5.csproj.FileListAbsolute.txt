@@ -5,3 +5,10 @@ D:\Мишель\vs c#\progr_var_5\progr_var_5\bin\Debug\progr_var_5.exe
 D:\Мишель\vs c#\progr_var_5\progr_var_5\bin\Debug\progr_var_5.pdb
 D:\Мишель\vs c#\progr_var_5\progr_var_5\obj\Debug\progr_var_5.exe
 D:\Мишель\vs c#\progr_var_5\progr_var_5\obj\Debug\progr_var_5.pdb
+C:\Users\Светлана и Александр\Desktop\Саня\MergeSort\progr_var_5\bin\Debug\progr_var_5.exe.config
+C:\Users\Светлана и Александр\Desktop\Саня\MergeSort\progr_var_5\bin\Debug\progr_var_5.exe
+C:\Users\Светлана и Александр\Desktop\Саня\MergeSort\progr_var_5\bin\Debug\progr_var_5.pdb
+C:\Users\Светлана и Александр\Desktop\Саня\MergeSort\progr_var_5\obj\Debug\progr_var_5.csprojAssemblyReference.cache
+C:\Users\Светлана и Александр\Desktop\Саня\MergeSort\progr_var_5\obj\Debug\progr_var_5.csproj.CoreCompileInputs.cache
+C:\Users\Светлана и Александр\Desktop\Саня\MergeSort\progr_var_5\obj\Debug\progr_var_5.exe
+C:\Users\Светлана и Александр\Desktop\Саня\MergeSort\progr_var_5\obj\Debug\progr_var_5.pdb
